@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blank</title>
+
+	<style >
+		div{ margin:50px 0px 25px 265px;
+			background-color:#D8B4E2;
+			width: 900px;
+			height: 650px;
+			border-style:solid;
+			border-color:white;
+		}
+		a{border-left:20px;
+	color:black;
+  font-size:20px;
+  margin: 80px 35px 135px 60px;
+  font-family:"Didot", serif;
+  letter-spacing:2px;
+ }
+		h1{ 
+	color:black;
+	text-align: center;
+	text-shadow: 2px 1px white ;
+	letter-spacing: 5px;
+	font-size: 100px;
+	font-family:"Stencil Std",fantasy;}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	</style>
+</head>
+<body style="background: #55286F;">
+	<h1>Registration Blank </h1>
+  
+<div>
+	<h2 style="color:white;
+	margin:50px 35px 5px 65px;
+		text-align: center;
+	letter-spacing: 1px;
+	font-size:33px;
+	font-family:"Snell Roundhand", cursive;";>Do you want to get a free ticket to their online concert? Quickly leave your contact details below and we will try to send it to you by email as soon as possible. </h2>
+	<form >
+  <input style="background-color:#E4D9FF;width: 600px; height:25px; margin:10px 10px 10px 150px;" type="text" id="fname" name="fname" placeholder="First Name">
+  <input style="background-color:#E4D9FF; width: 600px; height:25px; margin:10px 10px 10px 150px;" type="text" id="lname" name="lname" placeholder="Last Name">
+  <input style="background-color:#E4D9FF;width: 600px; height:25px; margin:10px 10px 10px 150px;" type="text" id="fname" name="fname" placeholder="Email">
+</form>
+<a>Which of these FOB albums do you like the most? (multi-selection) </a>
+<label style="margin: 10px 10px 10px 150px;" class="container">Evolve
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label style="margin: 10px 10px 10px 150px;" class="container">Night Visions
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label style="margin: 10px 10px 10px 150px;" class="container">Believer
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label style="margin: 10px 10px 10px 150px;" class="container">Smoke + Mirrors
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+	<center> <input type="button" class="w3-btn w3-black" style="background-color: white; width:300px; height:50px; font-size:20px" value="Submit"></center>
+  <a href="1.html" class="w3-btn w3-black">Back to Home page</a>                
+     </div>
+
+</body>
+</html>
